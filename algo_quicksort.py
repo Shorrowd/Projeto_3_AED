@@ -34,7 +34,7 @@ def partition(arr, low, high):
     arr[meio], arr[high] = arr[high], arr[meio]
     i = low
 
-    # Não inclui o pivot
+    # Items Trocas
     for j in range(low, high):
         if arr[j] <= pivot_value:
             arr[i], arr[j] = arr[j], arr[i] #troca
